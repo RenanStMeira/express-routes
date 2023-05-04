@@ -1,4 +1,4 @@
-# express-routeswe
+# express-routes
 
 Criando rotas metodo
 
@@ -6,5 +6,14 @@ Criando rotas metodo
 *POST
 *PUT
 *DELETE
+
+MVC
+HTTP
+Rotas
+Controller
+ORM-Sequelize
+Crud
+Relacionamentos
+N para N
 
 Importando express e rotas
