@@ -21,5 +21,5 @@ app.use(routes);
 
 
 // Porta
-app.listen(3333, () => console.log('servidor rodando na porta 3333') );
+app.listen(3001, () => console.log('servidor rodando na porta 3001') );
 

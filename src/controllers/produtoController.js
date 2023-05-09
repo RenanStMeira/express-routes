@@ -1,3 +1,6 @@
+const Produtos = require("../models/Produtos");
+
+
 // Criar um objeto estrurua
 const produtoController = {
     //Listagem de produtos
@@ -7,10 +10,17 @@ const produtoController = {
     },
 
     // criar metodo cadastrar produto POST
-    cadastrarProduto: (req, res) => {
-        console.log(req.body);
-        res.json("Produto cadastrado com sucesso");
-    }
+    async cadastrarProduto (req, res)  {
+       const {nome, preco, quantidade } = req.body;
+
+       const novoProduto = await Produtos.create({
+        nome,
+        preco, 
+        quantidade,
+       });
+
+        res.json(novoProduto);
+    },
 };
 
 module.exports = produtoController;

@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize');
 
 //Informaçoes do mysql
- const DB_NAME ='pet';
+ const DB_NAME ='produto';
  const DB_USER = 'root';
  const DB_PASS = '@Ana301200';
 

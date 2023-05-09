@@ -8,8 +8,9 @@ const routes = express.Router();
 const produtoController = require('../controllers/produtoController');
 routes.get('/produto/lista', produtoController.listarProduto);
 
-// Rota POST
-routes.post('/produto', produtoController.cadastrarProduto);
+
+// Rota POST criar Produto
+routes.post('/produto/criar', produtoController.cadastrarProduto);
 
 
 // Exporta modulos
